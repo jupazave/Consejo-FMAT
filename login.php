@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Ingresar</title>
-    <link rel="stylesheet" href="login.css"/>
+    <link rel="stylesheet" href="public/css/login.css"/>
 </head>
 <body>
 <center>
@@ -13,16 +13,18 @@
                 <h2>Ingresar</h2>
             </div>
             <div class="panel-cuerpo">
-                <form action="" method="post">
+                <span id="errores"></span>
+                <form action="" method="post" id="login">
                     <input type="text" name="usuario" id="usuario" class="input-formulario" placeholder="Usuario"/>
                     <input type="password" name="password" id="password" class="input-formulario" placeholder="Contraseña"/>
-                    <input type="submit" value="Acceder" class="boton /run/media/romarin/MELISSA/Proyectoazul"/>
+                    <input type="submit" value="Acceder" class="boton"/>
                 </form>
 
             </div>
         </div>
     </div>
 </center>
+<script src="public/javascripts/valida.js"></script>
 
 </body>
 </html>
