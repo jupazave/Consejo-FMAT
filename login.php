@@ -14,7 +14,7 @@
             </div>
             <div class="panel-cuerpo">
                 <span id="errores"></span>
-                <form action="acciones/begin_session.php" method="post" id="login">
+                <form action="acciones/iniciar_sesion.php" method="post" id="login">
                     <input type="text" name="usuario" id="usuario" class="input-formulario" placeholder="Usuario"/>
                     <input type="password" name="password" id="password" class="input-formulario" placeholder="Contraseña"/>
                     <input type="submit" value="Acceder" class="boton"/>
