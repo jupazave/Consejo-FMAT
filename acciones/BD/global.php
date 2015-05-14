@@ -9,7 +9,7 @@
 
 define('SERVER', 'localhost');
 define('USER', 'root');
-define('PASSWORD', '');
+define('PASSWORD', 'root');
 define('DB_NAME', 'consejo_fmat');
 
 function ejecutar_query($query)

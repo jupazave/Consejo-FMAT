@@ -1,7 +1,7 @@
 window.onload = function () {
 	login = document.getElementById("login");
 	login.addEventListener("submit", function (e) {
-		e.preventDefault();
+		
 		nombre = document.getElementById("usuario");
 		password = document.getElementById("password");
 		empty_name = document.getElementById("usuario").value == "";
@@ -25,14 +25,6 @@ window.onload = function () {
 		var res = nombre.value.split(".");
 
 		if (res.length == 2) {
-			if (nombre.value == "consejo.fmat" && password.value == "password") {
-				//window.location.assign("nuevo.html");
-			}else{
-				nombre.focus();
-				show_error("Tu usuario es incorrecto.");
-				return false;			
-
-			}
 		}else{
 			nombre.focus();
 			show_error("Tu nombre de usuario debe contener un punto cuando menos.");
