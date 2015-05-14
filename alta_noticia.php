@@ -8,7 +8,7 @@
 ?>
 
 
-<form action="acciones/agregar_noticia.php">
+<form action="acciones/agregar_noticia.php" method="post">
     <label for="fecha">Fecha</label>
     <input type="date" name="fecha"/>
 

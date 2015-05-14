@@ -37,8 +37,6 @@ html {
 body {
   color: #515151;
   background-color: #fff;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
 }
 
 a {
@@ -115,8 +113,8 @@ img {
  */
 
 .lead {
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: 1.05rem;
+  font-weight: 100;
 }
 
 
@@ -315,7 +313,7 @@ a.pagination-item:hover {
   color: #fff;
   margin-top: 0;
   font-family: "Abril Fatface", serif;
-  font-size: 3.25rem;
+  font-size: 2.25rem;
 }
 
 /* Sidebar nav */
@@ -357,4 +355,40 @@ a.sidebar-nav-item:focus {
     margin-left: 22rem;
     margin-right: 4rem;
   }
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+td,
+th {
+    padding: 0;
+}
+.table {
+    border-collapse: collapse !important;
+}
+.table td,
+.table th {
+    background-color: #fff !important;
+}
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #ddd !important;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
 }

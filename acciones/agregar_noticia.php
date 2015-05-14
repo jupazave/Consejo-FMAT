@@ -7,13 +7,13 @@
  */
 
 //incluye el dao con la información de la BD:
-include 'DB/global.php';
+include 'BD/global.php';
 
 $fecha = $_POST['fecha'];
 $titulo = $_POST['titulo'];
 $cuerpo = $_POST['cuerpo'];
 
-$sentencia_sql = "INSERT INTO noticias(fecha, titulo, cuerpo) VALUES($fecha, $titulo, $cuerpo)";
+$sentencia_sql = "INSERT INTO noticias(fecha, titulo, cuerpo) VALUES('$fecha', '$titulo', '$cuerpo')";
 
 ejecutar_query($sentencia_sql);
 
