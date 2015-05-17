@@ -7,7 +7,7 @@
  */
 
 //incluye el dao con la información de la BD:
-include 'BD/global.php';
+include '../../BD/global.php';
 
 session_start();
 
@@ -18,6 +18,7 @@ $sentencia_sql = "SELECT * FROM usuarios where nombre_usuario='$nick_user' AND c
 
 $usuario = ejecutar_query($sentencia_sql);
 
+
 if ($usuario->num_rows > 0) {
     $row = $usuario->fetch_assoc();
 
@@ -26,10 +27,9 @@ if ($usuario->num_rows > 0) {
     $_SESSION["nombre_usuario"] = $row["nombre_usuario"];
 
     //Redirigimos a index:
-    header('location: ../index.html');
+    header('location: ../index.php');
 } else {
-    echo "No hay usuarios con ese nombre";
-
+    header("Location: ../login.php?nf");
 }
 
 
